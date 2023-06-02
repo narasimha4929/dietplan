@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meal Plan Generator</title>
+    <link rel="stylesheet" href="meal_plan_generator.css">
+    <script src="meal_plan_generator.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Meal Plan Generator</h1>
+
+        <form id="mealPlanForm">
+            <div class="form-group">
+                <label for="numOfMeals">Number of Meals:</label>
+                <select id="numOfMeals" name="numOfMeals">
+                    <option value="2">2 Meals</option>
+                    <option value="3">3 Meals</option>
+                    <option value="5">5 Meals</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dietPreference">Diet Preference:</label>
+                <select id="dietPreference" name="dietPreference">
+                    <option value="balanced">Balanced</option>
+                    <option value="lowCarb">Low-Carb</option>
+                    <option value="lowFat">Low-Fat</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="healthSpecification">Health Specification:</label>
+                <select id="healthSpecification" name="healthSpecification">
+                    <option value="vegan">Vegan</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="alcoholFree">Alcohol-Free</option>
+                    <option value="peanutFree">Peanut-Free</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="calories">Calories:</label>
+                <input type="number" id="calories" name="calories" placeholder="Enter daily calorie intake">
+            </div>
+
+            <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        </form>
+
+        <table id="mealPlanTable" style="display: none;"></table>
+    </div>
+</body>
+
+</html>
