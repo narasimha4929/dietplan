@@ -4,8 +4,7 @@ function generateMealPlan() {
   var healthSpecification = document.getElementById("healthSpecification").value;
   var calories = document.getElementById("calories").value;
 
-  // Call the API and retrieve recipe information
-  // Replace the placeholder API_KEY with your actual Edamam API key
+  
   var apiURL = "https://api.edamam.com/api/recipes/v2?type=public&q=&app_id=d274a2ad&app_key=c2131569c6f44750cca1ba268df3de02";
 
   // Append the user's inputs to the API URL
